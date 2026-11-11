@@ -1,0 +1,13 @@
+{
+  "updated": "2026-11-10",
+  "checked": 0,
+  "eligible": 0,
+  "filed": 0,
+  "released": 0,
+  "medianDaysToRelease": null,
+  "pilot": {
+    "partner": null,
+    "since": null
+  },
+  "contactEmail": null
+}

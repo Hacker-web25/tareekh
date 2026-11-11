@@ -1,0 +1,18 @@
+{
+  "offline": {
+    "passed": 11,
+    "total": 11,
+    "ran": "2026-11-10",
+    "model": null
+  },
+  "live": {
+    "passed": 5,
+    "total": 5,
+    "ran": "2026-11-10",
+    "model": "nvidia/nemotron-3.5-bolt-e4b"
+  },
+  "agentFoundry": {
+    "built": false,
+    "url": null
+  }
+}

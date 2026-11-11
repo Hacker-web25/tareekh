@@ -1,0 +1,21 @@
+{
+  "name": "tareekh",
+  "version": "0.1.0",
+  "description": "Tareekh: finds undertrials entitled to release under Section 479 BNSS and prepares the paperwork.",
+  "scripts": {
+    "test": "node --test \"engine/test/*.test.js\" \"web/test/*.test.js\" \"agent/test/*.test.js\"",
+    "build": "node scripts/build.mjs",
+    "dev": "node agent/dev-server.js",
+    "eval": "node agent/evals/run.js",
+    "check:model": "node scripts/check-model.mjs"
+  },
+  "author": "Dhruv Bansal",
+  "license": "MIT",
+  "devDependencies": {
+    "@fontsource/mukta": "^5.3.0",
+    "@fontsource/rozha-one": "^5.3.0",
+    "esbuild": "^0.28.2"
+  },
+  "type": "module",
+  "private": true
+}

@@ -1,0 +1,408 @@
+<!doctype html>
+<html lang="hi-Latn" data-lang="hl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Tareekh: undertrial rihaai saathi</title>
+<meta name="description" content="Dhara 479 BNSS ke hisaab se kaun si tareekh par undertrial rihaai ka haqdaar ho jaata hai, ye ginta hai aur arzi taiyar karta hai.">
+<meta name="theme-color" content="#0f2f29">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='4' y='3' width='24' height='27' rx='3' fill='%23fbfaf3' stroke='%230f2f29' stroke-width='2'/%3E%3Crect x='4' y='3' width='24' height='8' rx='3' fill='%23cf2e22'/%3E%3Ccircle cx='16' cy='20' r='4.5' fill='%23e5a41b'/%3E%3C/svg%3E">
+<!--TAREEKH:CSS-->
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <!-- Slightly uneven edge, so the stamp looks pressed in ink and not drawn on a screen. -->
+    <filter id="ink" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="4" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="2.4"/>
+    </filter>
+  </defs>
+</svg>
+
+<a class="skip" href="#jaanch" data-i18n="skip">Seedhe case jaanchne par jaayein</a>
+
+<header class="top" id="topbar">
+  <a class="brand" href="#top" aria-label="Tareekh">
+    <span class="brand__mark" lang="hi">तारीख़</span>
+    <span class="brand__name">Tareekh<small data-i18n="brand.tag">Undertrial rihaai saathi</small></span>
+  </a>
+  <div class="top__right">
+    <div class="langs" role="group" data-i18n-label="lang.label" aria-label="Bhasha" id="langSwitch">
+      <button type="button" data-lang="hl" aria-pressed="true">Hinglish</button>
+      <button type="button" data-lang="hi" aria-pressed="false" lang="hi">हिन्दी</button>
+      <button type="button" data-lang="en" aria-pressed="false" lang="en">English</button>
+    </div>
+    <a class="btn btn--small btn--gold top__cta" href="#jaanch" id="navCta" data-i18n="nav.cta">Case jaanchein</a>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- 1. The problem, with a person in it -->
+<section class="hero" id="top" aria-labelledby="h1">
+  <div class="hero__shaft" aria-hidden="true"></div>
+  <div class="hero__copy">
+    <h1 id="h1">
+      <span class="h1__a" id="heroH1a"></span>
+      <span class="h1__b" id="heroH1b" data-i18n="hero.h1b"></span>
+    </h1>
+    <p class="hero__p" id="heroP"></p>
+    <p class="hero__note" data-i18n="hero.note"></p>
+    <div class="hero__cta">
+      <a class="btn btn--gold" href="#jaanch" id="heroCta1" data-i18n="hero.cta1">Apna case jaanchein</a>
+      <button class="btn btn--ghost" type="button" id="tourBtn" data-i18n="hero.cta2">40 second mein samjhein</button>
+    </div>
+    <a class="agentpill" href="#agent"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 10h4l2-5 3 10 2-5h3" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-i18n="hero.agent">AI agent kagaz padhta hai, kanoon ka engine faisla karta hai</span></a>
+  </div>
+
+  <div class="hero__cal">
+    <div class="cal" id="cal" role="img" data-i18n-label="cal.alt" aria-label="">
+      <div class="cal__board">
+        <div class="cal__hanger" aria-hidden="true"><i></i></div>
+        <div class="cal__head" aria-hidden="true"><span lang="hi">तारीख़</span><span id="calYear"></span></div>
+        <div class="cal__pad" id="calPad"></div>
+      </div>
+      <div class="cal__hud" aria-hidden="true">
+        <div class="hud__law" id="hudLaw"></div>
+        <div class="hud__bar"><i class="hud__fill" id="hudFill"></i><i class="hud__tick" id="hudTick"></i></div>
+        <div class="hud__ends"><span id="hudStart"></span><span id="hudEnd"></span></div>
+      </div>
+    </div>
+    <button class="linkbtn" type="button" id="replayBtn" data-i18n="hero.replay">Dobara dekhein</button>
+  </div>
+
+  <a class="hero__scroll" href="#kaise"><span data-i18n="hero.scroll">Neeche: Tareekh kya karta hai</span><i aria-hidden="true"></i></a>
+</section>
+
+<!-- 2. The solution -->
+<section class="kaise" id="kaise" aria-labelledby="kaiseH">
+  <div class="wrap">
+    <div class="kaise__intro">
+      <h2 id="kaiseH" data-i18n="kaise.h2">Kagaz se arzi tak, chaar kaam</h2>
+      <p class="lead" data-i18n="kaise.lead"></p>
+    </div>
+
+    <div class="steps" id="steps">
+      <svg class="tape" viewBox="0 0 1000 60" preserveAspectRatio="none" aria-hidden="true">
+        <path id="tapePath" d="M0 30 C 120 6, 200 54, 330 30 S 540 8, 660 32 S 860 52, 1000 28"/>
+      </svg>
+
+      <article class="step" data-step="1">
+        <svg viewBox="0 0 96 96" class="ico" aria-hidden="true">
+          <rect x="22" y="10" width="52" height="68" rx="3" class="ico__paper"/>
+          <g class="ico__lines"><path d="M32 26h32M32 36h32M32 46h24M32 56h30M32 66h18"/></g>
+          <rect class="ico__hl" x="30" y="32" width="36" height="8" rx="1.5"/>
+          <rect class="ico__hl ico__hl--2" x="30" y="52" width="30" height="8" rx="1.5"/>
+        </svg>
+        <h3 data-i18n="s1.t"></h3>
+        <p data-i18n="s1.d"></p>
+      </article>
+
+      <article class="step" data-step="2">
+        <svg viewBox="0 0 96 96" class="ico" aria-hidden="true">
+          <path d="M48 14v62M30 78h36" class="ico__stroke"/>
+          <g class="ico__beam"><path d="M16 26h64" class="ico__stroke"/>
+            <path d="M20 26l-9 22h26z M76 26l-9 22h26z" class="ico__pan"/></g>
+          <circle cx="48" cy="14" r="4" class="ico__dot"/>
+        </svg>
+        <h3 data-i18n="s2.t"></h3>
+        <p data-i18n="s2.d"></p>
+      </article>
+
+      <article class="step" data-step="3">
+        <svg viewBox="0 0 96 96" class="ico" aria-hidden="true">
+          <rect x="18" y="10" width="52" height="68" rx="3" class="ico__paper"/>
+          <g class="ico__write"><path d="M28 28h30M28 38h34M28 48h22M28 58h28"/></g>
+          <path d="M62 70l18-26 6 4-18 26-8 4z" class="ico__pen"/>
+          <text x="26" y="86" class="ico__glyph" lang="hi">अ</text><text x="46" y="86" class="ico__glyph">A</text>
+        </svg>
+        <h3 data-i18n="s3.t"></h3>
+        <p data-i18n="s3.d"></p>
+      </article>
+
+      <article class="step" data-step="4">
+        <svg viewBox="0 0 96 96" class="ico" aria-hidden="true">
+          <path d="M14 22a8 8 0 0 1 8-8h52a8 8 0 0 1 8 8v36a8 8 0 0 1-8 8H44L26 82V66h-4a8 8 0 0 1-8-8z" class="ico__paper"/>
+          <path class="ico__tick ico__tick--1" d="M30 40l8 8 14-16"/>
+          <path class="ico__tick ico__tick--2" d="M44 40l8 8 14-16"/>
+        </svg>
+        <h3 data-i18n="s4.t"></h3>
+        <p data-i18n="s4.d"></p>
+      </article>
+    </div>
+
+    <div class="kaise__notes">
+      <p class="owner" data-i18n="kaise.owner"></p>
+      <p class="human" data-i18n="kaise.human"></p>
+    </div>
+  </div>
+</section>
+
+<!-- 2b. The agent: what is AI here, and what is not -->
+<section class="agent" id="agent" aria-labelledby="agentH">
+  <div class="wrap">
+    <div class="agent__intro">
+      <h2 id="agentH" data-i18n="agent.h2">AI padhta hai. Faisla kanoon ka engine karta hai.</h2>
+      <p class="lead" data-i18n="agent.lead"></p>
+    </div>
+
+    <ol class="flow" aria-label="" data-i18n-label="agent.flow.label">
+      <li class="fnode fnode--paper">
+        <b data-i18n="agent.n.paper"></b>
+        <span data-i18n="agent.n.paper.d"></span>
+        <i class="fnode__lines" aria-hidden="true"></i>
+      </li>
+      <li class="fnode fnode--reader">
+        <b id="flowReader"></b>
+        <span id="flowReaderD"></span>
+      </li>
+      <li class="fnode fnode--tools">
+        <b data-i18n="agent.n.tools"></b>
+        <code>lookup_offence</code><code>check_section_479</code><code>draft_papers</code>
+      </li>
+      <li class="fnode fnode--engine">
+        <em class="fnode__edge"><span data-i18n="agent.n.edge"></span></em>
+        <b data-i18n="agent.n.engine"></b>
+        <span data-i18n="agent.n.engine.d"></span>
+      </li>
+      <li class="fnode fnode--out">
+        <b data-i18n="agent.n.out"></b>
+        <span data-i18n="agent.n.out.d"></span>
+      </li>
+    </ol>
+
+    <div class="rules">
+      <p><strong data-i18n="agent.g1.t"></strong> <span data-i18n="agent.g1.d"></span></p>
+      <p><strong data-i18n="agent.g2.t"></strong> <span data-i18n="agent.g2.d"></span></p>
+      <p><strong data-i18n="agent.g3.t"></strong> <span data-i18n="agent.g3.d"></span></p>
+    </div>
+
+    <div class="agent__foot">
+      <button type="button" class="btn btn--gold" id="agentDemo" data-i18n="agent.cta">Namuna kagaz par agent chalaayein</button>
+      <ul class="proof" id="agentProof" aria-label="" data-i18n-label="agent.proof.label"></ul>
+    </div>
+  </div>
+</section>
+
+<!-- 3. The working tool -->
+<section class="bench" id="jaanch" aria-labelledby="benchH">
+  <div class="wrap">
+    <div class="bench__intro">
+      <h2 id="benchH" data-i18n="bench.h2">Ek case jaanch ke dekhein</h2>
+      <p class="lead" data-i18n="bench.lead"></p>
+    </div>
+
+    <div class="bench__grid">
+      <form class="file" id="caseForm" novalidate autocomplete="off">
+        <div class="tabs" role="tablist">
+          <button type="button" role="tab" id="tabAgent" aria-selected="true" aria-controls="paneAgent"><span data-i18n="tab.agent">Agent se padhwaayein</span><i class="tabs__badge" data-i18n="tab.agent.badge">AI</i></button>
+          <button type="button" role="tab" id="tabManual" aria-selected="false" aria-controls="paneManual" tabindex="-1" data-i18n="tab.manual">Haath se bharein</button>
+        </div>
+
+        <div class="pane" id="paneManual" role="tabpanel" aria-labelledby="tabManual" hidden>
+          <fieldset class="q q--offence">
+            <legend data-i18n="q.offence">Aarop kis dhara mein hai?</legend>
+            <input class="search" type="search" id="offenceSearch" data-i18n-ph="q.offence.ph" placeholder="" aria-label="" data-i18n-label="q.offence.ph" spellcheck="false">
+            <div class="olist" id="offenceList" role="radiogroup" data-i18n-label="q.offence" aria-label=""></div>
+            <div class="custom" id="customBox" hidden>
+              <label class="field"><span data-i18n="custom.section"></span>
+                <input type="text" id="customSection" maxlength="60" inputmode="text"></label>
+              <div class="field"><span data-i18n="custom.max"></span>
+                <div class="pair">
+                  <label><input type="number" id="customYears" min="0" max="50" step="1" inputmode="numeric"> <em data-i18n="custom.years"></em></label>
+                  <label><input type="number" id="customMonths" min="0" max="11" step="1" inputmode="numeric"> <em data-i18n="custom.months"></em></label>
+                </div>
+              </div>
+              <label class="check"><input type="checkbox" id="customLife"><span data-i18n="custom.life"></span></label>
+              <label class="check"><input type="checkbox" id="customSpecial"><span data-i18n="custom.special"></span></label>
+            </div>
+          </fieldset>
+
+          <div class="q">
+            <label for="arrestDate" class="q__label" data-i18n="q.arrest">Giraftaari kis tareekh ko hui?</label>
+            <input type="date" id="arrestDate" min="1990-01-01">
+            <p class="hint" data-i18n="q.arrest.hint"></p>
+          </div>
+
+          <fieldset class="q">
+            <legend data-i18n="q.first"></legend>
+            <div class="chips" id="firstTime">
+              <label><input type="radio" name="firstTime" value="never"><span data-i18n="a.never"></span></label>
+              <label><input type="radio" name="firstTime" value="before"><span data-i18n="a.before"></span></label>
+              <label><input type="radio" name="firstTime" value="unknown"><span data-i18n="a.unknown"></span></label>
+            </div>
+          </fieldset>
+
+          <fieldset class="q">
+            <legend data-i18n="q.pending"></legend>
+            <div class="chips" id="pending">
+              <label><input type="radio" name="pending" value="no"><span data-i18n="a.only"></span></label>
+              <label><input type="radio" name="pending" value="yes"><span data-i18n="a.others"></span></label>
+              <label><input type="radio" name="pending" value="unknown"><span data-i18n="a.unknown"></span></label>
+            </div>
+          </fieldset>
+
+          <fieldset class="q" id="regimeBox" hidden>
+            <legend data-i18n="q.regime"></legend>
+            <p class="hint" data-i18n="q.regime.why"></p>
+            <div class="chips" id="regime">
+              <label><input type="radio" name="regime" value="ipc"><span data-i18n="a.ipc"></span></label>
+              <label><input type="radio" name="regime" value="bns"><span data-i18n="a.bns"></span></label>
+            </div>
+          </fieldset>
+
+          <details class="more" id="moreBox">
+            <summary data-i18n="more.sum">Aur jaankari (zaroori nahi)</summary>
+            <label class="field"><span data-i18n="more.bail"></span>
+              <input type="number" id="daysOnBail" min="0" step="1" inputmode="numeric" value="0"></label>
+            <label class="field"><span data-i18n="more.delay"></span>
+              <input type="number" id="delayDays" min="0" step="1" inputmode="numeric" value="0"></label>
+            <p class="hint" data-i18n="more.delay.hint"></p>
+          </details>
+        </div>
+
+        <div class="pane" id="paneAgent" role="tabpanel" aria-labelledby="tabAgent">
+          <p class="modechip" id="agMode" data-state="checking"><i aria-hidden="true"></i><span id="agModeTxt"></span></p>
+          <label class="q__label" for="agText" data-i18n="ag.label"></label>
+          <textarea id="agText" rows="5" spellcheck="false" maxlength="6000"></textarea>
+          <div class="row">
+            <button type="button" class="btn btn--small btn--ghost-dark" id="agSample" data-i18n="ag.sample"></button>
+            <button type="button" class="btn btn--small btn--ink" id="agRun" data-i18n="ag.run"></button>
+          </div>
+          <p class="hint" id="agPrivacy" data-i18n="ag.privacy"></p>
+          <p class="hint hint--warn" id="agPrivacyFree" data-i18n="ag.privacy.free" hidden></p>
+          <ol class="agtrace" id="agTrace" aria-label="" data-i18n-label="ag.trace.label"></ol>
+          <div class="agnote" id="agNote" role="status" aria-live="polite" hidden></div>
+          <div class="agask" id="agAsk" hidden></div>
+        </div>
+
+        <div class="file__foot">
+          <button type="button" class="linkbtn linkbtn--dark" id="loadSample" data-i18n="file.sample">Ramesh ka namuna</button>
+          <button type="button" class="linkbtn linkbtn--dark" id="clearCase" data-i18n="file.clear">Naya case</button>
+        </div>
+      </form>
+
+      <div class="verdict" id="verdict" aria-live="polite"></div>
+    </div>
+
+    <div class="minibar" id="minibar" hidden>
+      <span class="minibar__txt" id="minibarTxt"></span>
+      <a class="btn btn--small btn--gold" href="#verdict" data-i18n="minibar.open">Poora nateeja</a>
+    </div>
+
+    <section class="draft" id="draft" hidden aria-labelledby="draftH">
+      <div class="draft__head">
+        <h3 id="draftH" data-i18n="d.h">Arzi ka masauda</h3>
+        <button type="button" class="linkbtn linkbtn--dark" id="draftClose" data-i18n="d.close"></button>
+      </div>
+      <div class="draft__grid">
+        <div class="draft__side">
+          <div class="tabs tabs--small" role="tablist">
+            <button type="button" role="tab" id="dTabCourt" aria-selected="true" data-i18n="d.tab.court"></button>
+            <button type="button" role="tab" id="dTabJail" aria-selected="false" tabindex="-1" data-i18n="d.tab.jail"></button>
+          </div>
+          <div class="q">
+            <span class="q__label" data-i18n="d.lang"></span>
+            <div class="chips chips--small" id="dLang">
+              <label><input type="radio" name="dlang" value="hi"><span lang="hi">हिन्दी</span></label>
+              <label><input type="radio" name="dlang" value="en"><span lang="en">English</span></label>
+            </div>
+          </div>
+          <p class="hint" data-i18n="d.fields"></p>
+          <label class="field"><span data-i18n="d.f.name"></span><input type="text" data-detail="name" maxlength="80"></label>
+          <label class="field"><span data-i18n="d.f.jail"></span><input type="text" data-detail="jail" maxlength="80"></label>
+          <label class="field" data-for="court"><span data-i18n="d.f.court"></span><input type="text" data-detail="court" maxlength="100"></label>
+          <label class="field" data-for="both"><span data-i18n="d.f.caseNo"></span><input type="text" data-detail="caseNo" maxlength="60"></label>
+          <label class="field" data-for="court"><span data-i18n="d.f.ps"></span><input type="text" data-detail="ps" maxlength="60"></label>
+          <label class="field" data-for="court"><span data-i18n="d.f.place"></span><input type="text" data-detail="place" maxlength="60"></label>
+          <label class="field" data-for="jail"><span data-i18n="d.f.sender"></span><input type="text" data-detail="sender" maxlength="100"></label>
+        </div>
+        <div class="draft__doc">
+          <article class="doc" id="docView" tabindex="0"></article>
+          <div class="row row--end">
+            <button type="button" class="btn btn--small btn--ink" id="dCopy" data-i18n="d.copy"></button>
+            <button type="button" class="btn btn--small btn--ghost-dark" id="dPrint" data-i18n="d.print"></button>
+            <a class="btn btn--small btn--ghost-dark" id="dMail" href="#" data-i18n="d.mail"></a>
+            <a class="btn btn--small btn--ghost-dark" id="dWa" href="#" target="_blank" rel="noopener" data-i18n="d.wa"></a>
+          </div>
+          <p class="hint" data-i18n="d.note"></p>
+        </div>
+      </div>
+    </section>
+  </div>
+</section>
+
+<!-- 4. Size of the problem and how it scales -->
+<section class="scale" id="scale" aria-labelledby="scaleH">
+  <div class="wrap">
+    <h2 id="scaleH" data-i18n="sc.h2">Jail mein band logon mein se kitne ginti mein aaye?</h2>
+    <div class="scale__top">
+      <div class="dots-wrap">
+        <div class="dots" id="dots" role="img" aria-label="370 dots, one for every thousand undertrials. One dot is gold."></div>
+        <p class="dots__key"><i class="key key--dot"></i><span data-i18n="sc.dot"></span></p>
+      </div>
+      <div class="scale__read">
+        <p class="bignum" id="bigNum" aria-label="3,70,000">0</p>
+        <p class="bignum__cap">undertrials · NCRB 2024</p>
+        <p class="gold"><i class="key key--gold"></i><span data-i18n="sc.gold"></span></p>
+        <p class="caveat" data-i18n="sc.caveat"></p>
+      </div>
+    </div>
+
+    <dl class="stats">
+      <div><dt data-i18n="sc.stat1.n"></dt><dd data-i18n="sc.stat1.d"></dd></div>
+      <div><dt data-i18n="sc.stat2.n"></dt><dd data-i18n="sc.stat2.d"></dd></div>
+      <div><dt data-i18n="sc.stat3.n"></dt><dd data-i18n="sc.stat3.d"></dd></div>
+    </dl>
+
+    <div class="why">
+      <div><h3 data-i18n="sc.w1.t"></h3><p data-i18n="sc.w1.d"></p></div>
+      <div><h3 data-i18n="sc.w2.t"></h3><p data-i18n="sc.w2.d"></p></div>
+      <div><h3 data-i18n="sc.w3.t"></h3><p data-i18n="sc.w3.d"></p></div>
+    </div>
+    <p class="srcline" data-i18n="sc.src"></p>
+  </div>
+</section>
+
+<!-- 5. Honest impact -->
+<section class="asar" id="asar" aria-labelledby="asarH">
+  <div class="wrap">
+    <h2 id="asarH" data-i18n="im.h2">Asli asar ka khaata</h2>
+    <p class="lead" data-i18n="im.lead"></p>
+    <div class="khaata" id="khaata"></div>
+    <div class="pilot">
+      <p><strong data-i18n="im.pilot"></strong> <span id="pilotLine"></span></p>
+      <a class="btn btn--ink" id="pilotJoin" href="#" hidden data-i18n="im.join"></a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap foot__grid">
+    <div>
+      <p class="foot__brand"><span lang="hi">तारीख़</span> Tareekh</p>
+      <p data-i18n="ft.disclaimer"></p>
+      <p data-i18n="ft.privacy"></p>
+      <p id="reviewLine"></p>
+      <p data-i18n="ft.oss"></p>
+    </div>
+    <div>
+      <h3 data-i18n="ft.src.h"></h3>
+      <ul class="srcs">
+        <li><span data-i18n="ft.src.1"></span> <a href="https://indiankanoon.org/doc/199133418/" rel="noopener" target="_blank">indiankanoon.org</a></li>
+        <li><span data-i18n="ft.src.2"></span> <a href="https://ncrb.gov.in" rel="noopener" target="_blank">ncrb.gov.in</a></li>
+        <li data-i18n="ft.src.3"></li>
+        <li data-i18n="ft.src.4"></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<noscript><p style="padding:2rem;font-family:sans-serif">Is page ko chalane ke liye JavaScript chahiye. This page needs JavaScript.</p></noscript>
+<!--TAREEKH:JS-->
+</body>
+</html>
