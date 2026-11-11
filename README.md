@@ -6,6 +6,8 @@ Section 479 says an undertrial who has served one-third of the maximum sentence 
 
 The interface is in Hinglish, Hindi (Devanagari) and English. The legal document drafts are in Hindi or English.
 
+**Live demo: https://tareekh-puce.vercel.app** (use the sample paper or made-up cases; the free model provider may retain what it receives).
+
 **An agent reads the paper; the law engine decides.** Paste an arrest or custody paper and an agent reads it, looks the sections up, calls the rules engine, asks whatever the paper does not say, and prepares the application. Every step is shown as a trace. The AI never computes a date: see [The agent](#the-agent).
 
 ## Run it
@@ -91,7 +93,7 @@ The server picks the first key it finds, free options first (`agent/src/provider
 
 `TAREEKH_PROVIDER=gemini|nvidia|custom|anthropic` forces one when several keys are set.
 
-**Check a model before you rely on it:** `npm run check:model` (with the key set) tests the key, the model name and our tool format in one go and prints the provider's own error if something fails. When the page says "the AI service had a problem", run it, or start the server with `TAREEKH_DEBUG=1` to see the provider's reason in the server log. Neither prints the key or any paper text. `npm run check:model -- --list nemotron` lists the model names your key can use that contain "nemotron". The Gemini and custom paths speak the OpenAI chat format (`agent/src/openai.js`) and convert to and from the loop's own format, so the tools and the guards are the same for every provider.
+**Check a model before you rely on it:** `npm run check:model` (with the key set) tests the key, the model name and the tool format in one go and prints the provider's own error if something fails. When the page says "the AI service had a problem", run it, or start the server with `TAREEKH_DEBUG=1` to see the provider's reason in the server log. Neither prints the key or any paper text. `npm run check:model -- --list nemotron` lists the model names your key can use that contain "nemotron". The Gemini and custom paths speak the OpenAI chat format (`agent/src/openai.js`) and convert to and from the loop's own format, so the tools and the guards are the same for every provider.
 
 **Evals.** `agent/evals/cases.json` holds 16 papers: Hinglish and Devanagari notes, two sections at once, a death-or-life section, an unknown section, an ambiguous section, a missing date, a future date, a non-legal paper, and an injected instruction. The expected answers are not typed in by hand; the facts a careful person reads off each paper are fed to the rules engine and the agent must land on the same verdict and dates.
 
@@ -104,7 +106,7 @@ npm run eval -- --live --only-ai --write              # store the result for the
 
 On a free tier the live run spaces its calls out (`TAREEKH_CALL_GAP_MS`, default 6.5 s on Gemini). If cases fail with `rate_limited`, raise it to 13000 or wait for the quota to reset.
 
-The live-model path is covered by tests with a scripted model and a fake model server, but it was written without access to a real model. Run `--live` and read the result before trusting it; the page only shows live-eval numbers once such a run has been written to `web/data/agent-proof.json`.
+The live-model path is covered by tests with a scripted model and a fake model server, and was run against `nvidia/nemotron-3.5-bolt-e4b` (a small free model): 5 of 5 on the paper-reading cases that need a model, twice, on fictional papers. That is a check on my test papers, not a measure of general accuracy. The page only shows live-eval numbers that have been written to `web/data/agent-proof.json`.
 
 ## Honest limits
 
